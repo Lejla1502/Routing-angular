@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { ServersService } from '../servers.service';
 
@@ -16,4 +17,5 @@ export class ServerComponent implements OnInit {
     this.server = this.serversService.getServer(1);
   }
 
+  
 }
