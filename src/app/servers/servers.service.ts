@@ -25,7 +25,7 @@ export class ServersService {
     
     const server = this.servers.find(
       (s) => {
-        return s.id == id;
+        return s.id === id; //if I leave it with three equal signs it will not work, since id gets stringified when imported into this method
       }
     );
 
